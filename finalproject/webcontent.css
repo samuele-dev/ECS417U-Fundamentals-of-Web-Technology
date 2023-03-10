@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	background-color: #CECECE;
+	/*Use only if button scroll appers
+	overflow-x: hidden;*/
+}
+/*Start of Header*/
+#main-header-panel{
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(39, 40, 44, 0.45);
+	z-index: 3;
+	position: fixed;
+	background-color: #FFFFFF;
+	padding: 12px 0%;
+}
+#main-menu-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 5%;
+}
+#main-header-title{
+	cursor: pointer;
+}
+#main-header-title:hover {
+	color: black;
+}
+#main-navbar-panel{
+	/*Moving the panel around margin-right: -3.4%;*/
+	/*margin-right: 2%;*/
+
+}
+#main-navbar-list{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	float: center;
+}
+.main-navbar-item {
+	display: inline-block;
+}
+/* When user logs in */
+.main-navbar-item .username{
+	padding-right: 25%;
+}
+
+
+
+/* End of style when user logs in */
+.main-navbar-item a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 12% 16px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+.main-navbar-item a:hover {
+	color: #0b7bb8;
+}
+#signUp{ /*25px*/
+	background-color: #5d71ea;
+	border-radius: 25px;
+	color: white;
+	font-weight: bold;
+}
+#signUp:hover{
+	background-color: #1234ff;/*#3452ff;*/
+}
+/*Hamburger icon*/
+.open-slide{
+	
+}
+#hamburger-icon{
+	width: 30px;
+	height: 30px;
+}
+/*END of Header*/
+
+/*Side Navigation Menu*/
+.side-nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 7.5%;
+	transition: 0.39s;
+}
+/* Items in side nav e.g. About, Portfolio #side-nav-item*/
+.side-nav a{
+	padding: 5% 5% 5% 15%;
+	text-decoration: none;
+	font-size: 1.375em;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+.side-nav a:hover{
+	color: #0b7bb8;
+}
+/*Side Close Button*/
+.side-nav .btn-close{
+	position: absolute;
+	top: 0;
+	right: 18.95%;
+	font-size: 2.250em;
+	margin-left: 25%;
+}
+.btn-close{
+
+}
+/*Style only appers 920pxif pixel is*/
+@media(max-width: 1200px){
+	#main-navbar-panel{
+		display: none;
+	}
+	#account-navbar-panel{
+		display: none;
+	}
+}
+@media(min-width: 1201px){
+	.open-slide{
+		display: none;
+	}
+	.side-nav{
+		display: none;
+	}
+	
+}
+/*Artical*/
+.main-article{
+	z-index: 4;
+	background-color: #f0f0f0;
+	padding: 5% 5%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.flexbox-item{
+	/*border: 3px solid black;*/
+	padding-top: 0.5%;
+	padding-bottom: 2.5%;
+}
+.flexbox-item-1{
+	min-width: 10%;
+	min-height: 180px;
+}
+
+.main-article-section-subheader{
+	font-size: 225%;
+	flex: 1 200%;
+	text-decoration: underline;
+}
+.main-article-section-subheader-detail{
+	font-size: 150%;
+	flex: 1 200px;
+	color: #bbb;
+}
+.main-article-section-content{
+	font-size: 120%;
+	padding: 1% 50% 0% 0%;
+}
+.section-content-points{
+	font-size: 120%;
+	padding: 0.5% 0% 0% 2.5%;
+}
+#uniCarImage{
+	width: 3%;
+	min-width: 200px;
+}
+footer{
+	background-color: #222;
+	color: white;
+	height: 30vh;
+	max-height: 30%;
+	min-height: 30%;
+	padding: 2% 0%;
+}
+#footer-content{
+	text-align: center;
+}
+#footer-copyright{
+	text-align: center;
+	margin-top: 10%;
+}

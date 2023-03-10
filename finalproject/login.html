@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head> <!-- Information about the web page -->
+		<title>Samuele Joshi - Log In</title> <!-- Source https://gallery.kissclipart.com/20180901/tbw/kissclipart-nyc-s-train-clipart-train-new-york-city-subway-bc9cbd979a925890.jpg -->
+		<link rel="stylesheet" type="text/css" href="login.css">
+		<!-- Uncomment if you want to reset <link rel="stylesheet" type="text/css" href="index.css">-->
+		<link rel="icon" href="WebFavicon.png" type="image/png" sizes="32x32">
+		<meta charset="UTF-8">
+		<meta name="description" content="Samuele Joshi - Developer">
+		<meta name="keywords" content="Java,Programming,Developer">
+		<meta name="author" content="Samuele Joshi">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body> <!-- Form where the user enters there details in -->
+		<main> <!--name="loginForm"-->
+			<div id="form-Container">
+				<form id="login-Form" role="form" action="login.php" method="post">
+					<fieldset id="login-fieldset"> <!-- Section off the form -->
+						<legend id="login-Title">Login Form</legend> <!-- Title of the form -->
+						<label for="email" class="label-Title">Email:</label>
+						<br>
+						<input id="email" type="email" name="email" placeholder="E-mail" required>
+						<br><br>
+						<label for="password" class="label-Title">Password:</label>
+						<br>
+						<input id="password" type="password" name="password" placeholder="Password" required>
+						<br><br> <!-- Login or clear the data they entered in the form -->
+						<button id="login-submit" name="login-submit" type="submit" value="Login">Login</button>
+						<button id="login-clear" type="reset">Clear</button>
+					</fieldset>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>
