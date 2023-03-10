@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    /*background-color: rgb(2, 149, 248);*/
+	background-color: rgb(2, 149, 248);
+}
+/*Start of Header*/
+#main-header-panel{
+	width: 100%;
+	box-shadow: 5px 5px 5px rgba(39, 40, 44, 0.45);
+	z-index: 3;
+	position: fixed;
+	background-color: #FFFFFF;
+	padding: 12px 0%;
+}
+#main-menu-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0% 5%;
+}
+#main-header-title{
+	cursor: pointer;
+}
+#main-header-title:hover {
+	color: black;
+}
+#main-navbar-panel{
+	/*Moving the panel around margin-right: -3.4%;*/
+	/*margin-right: 2%;*/
+
+}
+#main-navbar-list{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #FFFFFF;
+	float: center;
+}
+.main-navbar-item {
+	display: inline-block;
+}
+/* When user logs in */
+.main-navbar-item .username{
+	padding-right: 25%;
+}
+
+
+
+/* End of style when user logs in */
+.main-navbar-item a{
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 12% 16px;
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+.main-navbar-item a:hover {
+	color: #0b7bb8;
+}
+#signUp{ /*25px*/
+	background-color: #5d71ea;
+	border-radius: 25px;
+	color: white;
+	font-weight: bold;
+}
+#signUp:hover{
+	background-color: #1234ff;/*#3452ff;*/
+}
+/*Hamburger icon*/
+.open-slide{
+	
+}
+#hamburger-icon{
+	width: 30px;
+	height: 30px;
+}
+/*END of Header*/
+
+/*Side Navigation Menu*/
+.side-nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	right: 0;
+	background-color: #111;
+	opacity: 0.9;
+	overflow-x: hidden;
+	padding-top: 7.5%;
+	transition: 0.39s;
+}
+/* Items in side nav e.g. About, Portfolio #side-nav-item*/
+.side-nav a{
+	padding: 5% 5% 5% 15%;
+	text-decoration: none;
+	font-size: 1.375em;
+	color: white;
+	display: block;
+	transition: 0.3s;
+}
+.side-nav a:hover{
+	color: #0b7bb8;
+}
+/*Side Close Button*/
+.side-nav .btn-close{
+	position: absolute;
+	top: 0;
+	right: 18.95%;
+	font-size: 2.250em;
+	margin-left: 25%;
+}
+.btn-close{
+
+}
+/*Style only appers 920pxif pixel is*/
+@media(max-width: 1200px){
+	#main-navbar-panel{
+		display: none;
+	}
+	#account-navbar-panel{
+		display: none;
+	}
+}
+@media(min-width: 1201px){
+	.open-slide{
+		display: none;
+	}
+	.side-nav{
+		display: none;
+	}
+	
+}
+
+/* View Blog CSS */
+main{
+	padding-top: 100px;
+	/*margin-bottom: -35%;*/
+}
+#blog-Artical{
+    
+}
+.blog-Section{
+    font-family: Microsoft Sans Serif;
+    border: 1px solid black;
+    padding: 0.75%;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: whitesmoke;
+}
+#blog-ID{
+    font-weight: bold;
+}
+#blog-Date{
+    text-align: right;
+}
+#blog-Title{
+    font-weight: bold;
+}
+#blog-Content{
+
+}
+#noBlog{
+	text-align: center;
+	color: whitesmoke;
+	padding-bottom: 40%;
+}
+#monthForm{
+	display: absolute;
+	margin-left: 17.25%;
+	color: whitesmoke;
+}
+
+/* FOOTER */
+footer{
+	background-color: #222;
+	color: white;
+	height: 30vh;
+	max-height: 30%;
+	min-height: 30%;
+	/*padding: 2% 0%;*/
+}
+#footer-container{
+	margin: 2% 2%;
+}
+#footer-content{
+	text-align: center;
+}
+#footer-copyright{
+	text-align: center;
+}
